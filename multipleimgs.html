@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+
+<body>
+
+
+
+    <style>
+        body {
+            background-color: #05815e;
+            color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            transition: 0.5s;
+        }
+
+        button{
+            border: 1px dashed  #F5F5F5;
+            background-color: transparent;
+            color: antiquewhite;
+            padding:10px;
+            transition: 0.2s;
+            margin: 5px;
+
+        }
+        button:hover{
+            background-color: #F5F5F5;
+            color: #05815e;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+
+        img{
+            width: 100%;
+            max-height: 300px;
+            border-radius: 15px;
+        }
+
+    </style>
+    <h1>DOM Manipulation</h1>
+
+
+    <div class="" style="max-width: 500px;">
+        
+        <div class="" style="text-align: center;">
+            <button id="button1" >Change Image <b>src [ 1 ]</b></button>
+            <button id="button2" >Change Image <b>src [ 2 ]</b></button>
+            <button id="button3" >Change Image <b>src [ 3 ]</b></button>
+            <button id="button4" >Change Image <b>src [ 4 ]</b></button>
+        </div>
+        
+        <div class="" style="margin-top: 20px;">
+            <img id="image" src="https://t4.ftcdn.net/jpg/01/35/22/61/240_F_135226109_p71fSAQ7VR7Gh1qhffdoE7upzIafRKp6.jpg" alt="">
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+
+        document.getElementById("button1")
+        document.getElementById("button2") 
+        document.getElementById("button3") 
+        document.getElementById("button4") 
+        
+        console.log(document.getElementById("button1"))
+        console.log(document.getElementById("button2"))
+        console.log(document.getElementById("button3"))
+        console.log(document.getElementById("button4"))
+        
+        const button1 = document.getElementById("button1");
+        const button2 = document.getElementById("button2");
+        const button3 = document.getElementById("button3");
+        const button4 = document.getElementById("button4");
+        document.getElementById("image");
+        console.log(document.getElementById("image"))
+        
+         const image = document.getElementById("image");
+
+        button1.addEventListener("click",function (params) {
+            image.src = 'https://t4.ftcdn.net/jpg/01/35/23/25/240_F_135232549_SViHiSui7CJGzwwmviXLnzIPYjMbzsIH.jpg'
+        }) 
+        button2.addEventListener("click",function (params) {
+            image.src = 'https://t3.ftcdn.net/jpg/01/20/74/06/240_F_120740651_lVHGRtP6DkuyerUwffbHVRAXhDvt5sXg.jpg'
+        }) 
+        button3.addEventListener("click",function (params) {
+            image.src = 'https://t4.ftcdn.net/jpg/05/43/79/07/240_F_543790749_E27TRk7rxfH6hPI6YuJINKCAxn1MDh3f.jpg'
+        }) 
+        button4.addEventListener("click",function (params) {
+            image.src = 'https://t4.ftcdn.net/jpg/05/96/79/33/240_F_596793371_tAVAFzIBHZV9nkKVRa0lDtqCvQ30f6m5.jpg'
+        }) 
+        
+
+
+    </script>
+
+</body>
+
+</html>
